@@ -1,0 +1,57 @@
+<DOCTYPE html>
+  <html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.7.0/polyfill.min.js">
+    </script>
+    <script src="iframeResizer.min.js" type="text/javascript"></script>
+    <title>iFrame (desktop)</title>
+    <style>
+      html {
+        overflow-x: hidden;
+      }
+
+      body {
+        scroll-behaviour: smooth;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      iframe {
+        scroll-behaviour: smooth;
+        width: 100%;
+        border: none;
+        margin: auto;
+        margin-top: 80px;
+        background: #ffffff;
+      }
+
+
+      @media only screen and (max-width: 960px) {
+        iframe {
+          margin-top: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <iframe id="myIframe" src="http://localhost:3033" name="frame"></iframe>
+
+    <script>
+      iFrameResize({
+        log: true,
+        inPageLinks: true,
+        checkOrigin: false,
+        log: false
+      }, '#myIframe')
+    </script>
+  </body>
+
+  </html>

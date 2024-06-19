@@ -1,0 +1,45 @@
+{
+  "name": "jeu-paques-2024-simple",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3033",
+    "devh": "next dev -p 3033 -h 0.0.0.0",
+    "build": "next build && next export && next-image-export-optimizer",
+    "test": "npx playwright test --headed --debug",
+    "t-open": "npx playwright open localhost:3033",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "@material-tailwind/react": "1.2.5",
+    "@types/node": "18.11.13",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "clsx": "^2.1.0",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "framer-motion": "^10.16.5",
+    "iframe-resizer": "^4.3.2",
+    "immer": "^10.0.3",
+    "next": "13.0.6",
+    "next-image-export-optimizer": "^1.1.2",
+    "react": "18.2.0",
+    "react-confetti-explosion": "^2.1.2",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.41.2",
+    "react-player": "^2.11.0",
+    "react-quick-pinch-zoom": "^5.1.0",
+    "typescript": "4.9.4",
+    "usehooks-ts": "^3.0.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.29.1",
+    "@svgr/webpack": "^8.1.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "3.2.4"
+  }
+}
